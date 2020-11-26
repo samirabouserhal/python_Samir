@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Workspace_Samir/projet.py"
+run = "python Workspace_Samir/Test_space.py"
