@@ -3,5 +3,9 @@
 #print('Now let\'s see what the # does')
 #print("Victor then said,\"The sky is blue\".")
 # That sequence of text was to test my ability to implement quotation markes and apostrophies in texts
-#print("Who's pissing who off")
-print("")
+#print("")
+x= 465455454658457685468465843575
+y=54545343543546545456657688768
+z= x+y
+#print(z)
+print(max(x,y))
