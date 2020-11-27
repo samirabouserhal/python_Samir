@@ -1,1 +1,2 @@
-"C:\Program Files\Python36\python.exe"
+"C:\Program Files\Python36\python.exe" #command prompt
+"C:/Program Files/Python36/python.exe" #Bash
