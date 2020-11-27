@@ -1,5 +1,5 @@
-print("Ask the computer to repeat something:")
+print("Dites quelque chose a l'ordinateur:")
 user_input=input()
-x=", thank you for your time"
-print("The computer has processed your request.")
-print("It has decided to repeat:",user_input,x)
+x="Merci et bonne journée"
+#print("The computer has processed your request.")
+print(x)
