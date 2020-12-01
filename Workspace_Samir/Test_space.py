@@ -1,4 +1,6 @@
-#Programme de questionnement
+#Programme de comparaison et de elif
+#Par : Samir Abou Serhal    abosam30@ecolecatholique.ca
+#2020-12-01
 print("Chosis la couleur rouge ou bleu")
 choix=input().lower()
 
@@ -37,4 +39,3 @@ print("Bonjour", nom,"je suis content de faire votre connaissance, je m'appelle 
 print("Vous avez quelle age?")
 age=input()
 print("Vous avez", age, "ans?! WOW!")
-
