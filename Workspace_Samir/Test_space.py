@@ -14,7 +14,7 @@ if choix=="bleu":
         print("Donc vous n'aimez pas la couleur bleu")
 
 
-if choix=="rouge":
+elif choix=="rouge":
     print("")
     print("Vous avez chosi rouge")
     print("Aimez vous la couleur rouge, oui ou non")
