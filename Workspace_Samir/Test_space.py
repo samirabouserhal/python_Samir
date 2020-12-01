@@ -1,3 +1,4 @@
+#Programme de questionnement
 print("Chosis la couleur rouge ou bleu")
 choix=input().lower()
 
