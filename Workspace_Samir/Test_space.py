@@ -14,7 +14,7 @@ if choix=="bleu":
     choix2=input().lower()
     if choix2=="oui":
         print("Donc vous aimez la couleur bleu, moi aussi!!")
-    if choix2=="non":
+    elif choix2=="non":
         print("Donc vous n'aimez pas la couleur bleu")
 
 
@@ -25,7 +25,7 @@ elif choix=="rouge":
     choix2=input().lower()
     if choix2=="oui":
         print("Donc, vous aimez la couleur rouge, moi aussi!!!")
-    if choix2=="non":
+    elif choix2=="non":
         print("Donc vous n'aimez pas la couleur rouge")
 
 if choix2=="non":
