@@ -36,5 +36,5 @@ nom= input()
 print("Bonjour", nom,"je suis content de faire votre connaissance, je m'appelle  Arc.")
 print("Vous avez quelle age?")
 age=input()
-print("Vous avez", age, "année?! WOW!")
+print("Vous avez", age, "ans?! WOW!")
 
