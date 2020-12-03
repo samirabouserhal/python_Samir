@@ -2,7 +2,7 @@
 #Par : Samir Abou Serhal    abosam30@ecolecatholique.ca
 # 2020-12-01
 
-
+"""
 print("Chosis la couleur rouge ou bleu")
 choix=input().lower()
 
@@ -41,4 +41,18 @@ print("Bonjour", nom,"je suis content de faire votre connaissance, je m'appelle 
 print("Vous avez quelle age?")
 age=input()
 print("Vous avez", age, "ans?! WOW!!!")
-#checking something
+"""
+
+# Nouveau projet
+"""
+print("oui ou non")
+choix=input().lower()
+if choix=="oui":
+    print("Vous avez choisi oui")
+elif choix=="non":
+    print("Vous avez choisi non")
+else:
+    print("Je m'excuse, je n'ai pas compris", choix, "pouvez vous recommencer s'il vous plaît.")
+    """
+
+
