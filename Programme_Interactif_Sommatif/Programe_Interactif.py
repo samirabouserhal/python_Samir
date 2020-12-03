@@ -54,7 +54,7 @@ if estOui==True:
     print("La princess fut transporté vers le royaune de Kit Kat au sud du royaume de Guimauve.")
     print("Le Mage Gandalf est très familier avec se royaume et il te guidera vers le chateau où ma cher fille est détenu.")
     print("")
-    print("Bonjour"', nom, '"Je suis le Mage Gandalf. J\'aimerais quité avant le couché du soleil, donc alons-y!")
+    print("Bonjour", nom, "Je suis le Mage Gandalf. J\'aimerais quité avant le couché du soleil, donc alons-y!")
     print("Le Soleil se couche, on devrait se reposer la nuit")
     print("Le Mage et", nom,"s'endorme autour du feu de camp que le mage a allumer")
     print("")
@@ -79,6 +79,4 @@ if estOui:
     print("")
     print("Après avoir gagné contre les goblins, vous avez continuer votre aventure vers le royaume de Kit Kat.")
     print("Deux jours on passé et vous avez finalement atteint le chateau du royaume.")
-
-
-
+    
