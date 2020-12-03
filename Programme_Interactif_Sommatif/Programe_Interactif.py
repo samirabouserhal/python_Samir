@@ -62,11 +62,23 @@ if estOui==True:
     Pour_continuer=input()
 
     print(nom.upper(), "RÉVEILLE-TOI, ON SE FAIT ATTACKER PAR DES GOBLINS!!!")
-    print(nom.upper()"LES GOBLINS ONT PEUR DU FEU. PREND UNE BRANCHE DU FEU DE CAMP POUR NOUS DÉFENDRE")
+    print(nom.upper(),"LES GOBLINS ONT PEUR DU FEU. PREND UNE BRANCHE DU FEU DE CAMP POUR NOUS DÉFENDRE")
     print("Qu'est-ce que vous aller faire, allez vous prendre le 'feu' ou aller vous sortir votre 'épée'")
-    choix3=input.lower()
-    
+    choix3=input().lower()
+
     if choix3=="feu":
+        estOui=True
+        print("Vous avez sauvé la vie du Mage et la votre, félicitation")
+    elif choix3=="épée":
+        estOui=False
+        print("Les goblins ne peuvent pas être tué par ton épée. Ils ont gagnés la bataille et vous avez été tué")
+        print("")
+        print("GAME OVER")
+
+if estOui:
+    print("")
+    print("Après avoir gagné contre les goblins, vous avez continuer votre aventure vers le royaume de Kit Kat.")
+    print("Deux jours on passé et vous avez finalement atteint le chateau du royaume.")
 
 
 
