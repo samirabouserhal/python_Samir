@@ -92,5 +92,6 @@ if estOui==True:
 if estOui:
     print("")
     print("Après avoir gagné contre les goblins, vous avez continuer votre aventure vers le royaume de Kit Kat.")
+    print("")
     print("Deux jours on passé et vous avez finalement atteint le chateau du royaume sans aucun nouveau problème.")
     
