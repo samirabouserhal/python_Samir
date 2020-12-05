@@ -6,7 +6,7 @@ print("S'il vous plaît insérer votre nom:")
 nom= input()
 print("")
 print("Bonjour", nom,", j'ai besoin de votre aide. La princesse du royaume Guimauve, ma chère fille, fut kidnappé et vous êtes la seul personne qui puisse la sauvé.") 
-print("Lors de cette aventure, je vous présentera des choix qui se retrouveront entre guillemets.")
+print("Lors de cette aventure, je vous présentera des choix qui se retrouveront entre guillemets. S'il vous plaît soigner votre ortographe")
 print("Cette mission sera difficile, mais sa serait un petit défi pour un chevalier comme vous.")
 print("")
 print("Voici votre premier choix")
@@ -23,7 +23,7 @@ if choix1=="oui":
     print("Le Mage Gandalf vous accompagnera sur votre aventure pour vous donner des conseils.")
 elif choix1=="non":
     print("")
-    print("Je ne comprends pas, voulez vous laiser la princess mourir toute seule? 'oui' ou 'non'")
+    print("Je ne comprends pas, voulez vous laiser la princess mourir toute seule? 'oui' je veux la laisser mourir ou 'non' je vais la sauver")
     choix2=input().lower()
     if choix2=="oui":
         estOui=False
@@ -94,5 +94,22 @@ if estOui:
   print("Après avoir gagné contre les goblins, vous avez continuer votre aventure vers le royaume de Kit Kat.")
   print("")  
   print("Deux jours on passé et vous avez finalement atteint le chateau du royaume sans aucun nouveau problème.")
+  print("Vous avez maintenant deux options. Vous pouvez soit infiltrer le chateau 'silencieusement', ou vous pouvez entré 'bruyant'" )
+  choix4=input().lower()
+  if choix4=="silencieusement":
+    print("Donc vous voulez entré silencieusement?")
+    print("Il faut maintenant choisir où infiltrer")
+    print("Vous pouvez soit vous 'déguisé' comme des servants en utilisant la magie du Mage, ou vous pouvez entré en utilisant le système de 'ventilation'")
+    choix5=input().lower()
+    if choix5="déguisé":
+      print("Vous avez infiltré le chateau avec succès!!")
+      print("Tu peux commencé la recherche pour la princess")
+      estOui=True
+    elif choix5="ventilation":
+      print("Vous avez essayer d'utiliser le système de ventilation, mais votre épée fesait trop de bruit contre les conduits d'air et vous avez été découvert et emprisonné")
+      estOui=False
+  elif: choix4="bruyant":
+    print("En choisisant l'entré 'bruyant', vous allez entré par force par la porte principal")
+    print("Êtes-vous certain que vous voulez choisir cette méthode pour sauver la princess")
 
     
