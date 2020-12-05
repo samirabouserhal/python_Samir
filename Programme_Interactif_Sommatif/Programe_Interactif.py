@@ -42,6 +42,7 @@ elif choix1=="non":
 else: 
     print("Je m'excuse, je n'ai pas compris ce que vous avez écris." "Je présume que vous avez faite la bonne décision.")
     estOui=True
+
 if estOui==True:
     print("Merci d'avoir choisi de sauver la princess. Votre aventure commence maintenant.")
     print("")
