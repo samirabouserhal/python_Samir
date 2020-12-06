@@ -2,10 +2,16 @@
 # Ce document fut créer le 3 décembre 2020 et modifier le 6 décembre 2020
 # Pour me contacter, envoyer un couriel à abosam@ecolecatholique.ca
 
+
+# Le but de ce programme est de raconter une histoire interactive à l'utilisateur
+
+
+#Introduction
+
 print("S'il vous plaît insérer votre nom:")
 nom= input()
 print("")
-print("Bonjour", nom,", j'ai besoin de votre aide. La princesse du royaume Guimauve, ma chère fille, fut kidnappé et vous êtes la seul personne qui puisse la sauvé.") 
+print("Bonjour", nom,", j'ai besoin de votre aide. La princesse du royaume Guimauve, ma chère fille, fut kidnappé et vous êtes la seul personne qui peut la sauvé.") 
 print("Lors de cette aventure, je vous présentera des choix qui se retrouveront entre guillemets. S'il vous plaît soigner votre ortographe")
 print("Cette mission sera difficile, mais sa serait un petit défi pour un chevalier comme vous.")
 print("")
@@ -51,7 +57,7 @@ if estOui==True:
 
 
 
-# Premier problème
+# Première décision
 
 if estOui==True:
     print("")
@@ -85,7 +91,7 @@ if estOui==True:
       estOui=True
 
 
-# Deuxième problème
+# Deuxième décision et troisième décision
 if estOui:
   print("")
   print("Après avoir gagné contre les goblins, vous avez continuer votre aventure vers le royaume de Kit Kat.")
@@ -144,7 +150,7 @@ if estOui:
     estOui=True
 
 
-# Dernière étape
+# Dernière décision
 
 if estOui:
   print(nom,", tu es maintenant dans le chateau")
@@ -164,6 +170,8 @@ if estOui:
   elif choix8=="maison":  
     print("Ne voulez vous pas que ma fille soit contente")
     print("Vous êtes quand même trop jeune pour comprendre alors")
+    print("")
+    print("GAME OVER")
     estOui=False  
   else:
     print("Je m'excuse, je n'ai pas compris ce que vous avez écris. Je présume que votre choix à été la bonne.")
