@@ -165,7 +165,7 @@ if estOui:
                     repeat2=False
                 else:
                     print("Je m'excuse, je n'ai pas compris ce que vous avez écris. Je vous donne une autre chance de répondre à la question.")
-                    print("Pèse enter pour entre une nouvelle réponse.")
+                    print("Pèse enter pour entre une nouvelle réponse.") #Je ne sait pas pourquoi ce choix uniquement nécésittent deux input lors d'une erreur
                     repeat2=True
                     choix7=input().lower()
         
