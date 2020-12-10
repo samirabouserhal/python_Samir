@@ -178,3 +178,19 @@ while repeat:
         choix=input().lower()
 
 
+print("")
+print("")
+print("up or down")
+boucle=True
+user=input().lower()
+while boucle:
+    if user=="up":
+        print("going up")
+        boucle=False
+    elif user=="down":
+        boucle=False
+        print("down")
+    else:
+        print("Je n'ai pas compris")
+        boucle=True
+        user=input().lower()
