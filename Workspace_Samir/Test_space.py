@@ -178,6 +178,8 @@ while repeat:
         choix=input().lower()
 
 
+
+
 print("")
 print("")
 print("up or down")
@@ -187,9 +189,44 @@ while boucle:
     if user=="up":
         print("going up")
         boucle=False
+        boucle1=True 
+        print("pizza ou chien chaud")
+        user1=input().lower()
+        while boucle1:
+            if user1=="pizza":
+                print("Vous avez choisis la pizza")
+                boucle1=False
+            
+            elif user1=="chien chaud":
+                print("Vous avez choisis le chien chaud")
+                boucle1=False
+
+            else:
+                print("Je n'ai pas compris")
+                boucle1=True
+                user1=input().lower()
+
+    
     elif user=="down":
         boucle=False
-        print("down")
+        print("You're going down")
+        boucle3=True
+        user2=input().lower()
+        print("tôt ou tard")
+        while boucle3:
+            if user2=="tôt":
+                print("Félicitation, vous êtes tôt")
+                boucle3=False
+
+            elif user2=="tard":
+                print("Vous êtes en retard")
+                boucle3=False
+
+            else:
+                print("Je n'ai pas compris")
+                boucle3=True
+                user2=input().lower()
+    
     else:
         print("Je n'ai pas compris")
         boucle=True
