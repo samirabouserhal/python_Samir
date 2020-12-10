@@ -138,11 +138,11 @@ repeat=True
 choix=input().lower()
 while repeat:
     if choix=="oui":
-        print("yes")
+        print("Vous avez chosis oui")
         repeat=False
 
     elif choix=="non":
-        print("non")
+        print("Vous avez choisis non")
         repeat=False
 
     else:
