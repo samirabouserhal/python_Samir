@@ -54,7 +54,7 @@ elif choix=="non":
 else:
     print("Je m'excuse, je n'ai pas compris", choix, "pouvez vous recommencer s'il vous plaît.")
     """
-
+"""
 estOui=True
 if estOui:
   print("")
@@ -129,3 +129,23 @@ if estOui:
         print("Je m'excuse, je n'ai pas compris ce que vous avez écris. Je vous donne une autre chance de répondre à la question.")
         repeat2=True
         choix4=input().lower()
+"""
+
+
+# EXEMPLE DE BOUCLE
+print("oui ou non")
+repeat=True
+choix=input().lower()
+while repeat:
+    if choix=="oui":
+        print("yes")
+        repeat=False
+
+    elif choix=="non":
+        print("non")
+        repeat=False
+
+    else:
+        print("Didn't understand")
+        repeat=True
+        choix=input().lower()
