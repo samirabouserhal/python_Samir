@@ -130,7 +130,7 @@ if estOui:
         repeat2=True
         choix4=input().lower()
 """
-"""
+
 
 # EXEMPLE DE BOUCLE
 print("oui ou non")
@@ -176,4 +176,4 @@ while repeat:
         repeat=True
         choix=input().lower()
 
-"""
+
