@@ -140,11 +140,37 @@ while repeat:
     if choix=="oui":
         print("Vous avez chosis oui")
         repeat=False
-
+        repeat2=True
+        print("rouge ou bleu")
+        choix2=input().lower()
+        while repeat2:
+            if choix2=="rouge":
+                print("vous avez choisis rouge")
+                repeat2=False
+            elif choix2=="bleu":
+                print("vous avez choisis bleu")
+                repeat2=False
+            else:
+                print("Didn't understand")
+                repeat2=True
+                choix2=input().lower()
     elif choix=="non":
         print("Vous avez choisis non")
         repeat=False
-
+        repeat3=True
+        print("vert ou jaune")
+        choix3=input().lower()
+        while repeat3:
+            if choix3=="vert":
+                print("vous avez choisis vert")
+                repeat3=False
+            elif choix3=="jaune":
+                print("vous avez choisis jaune")
+                repeat3=False
+            else:
+                print("Didn't understand")
+                repeat3=True
+                choix3=input().lower()
     else:
         print("Didn't understand")
         repeat=True
