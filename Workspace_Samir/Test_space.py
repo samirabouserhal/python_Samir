@@ -234,6 +234,9 @@ while boucle:
 
         """
 
+
+"""
+#Numbre sorter
 print("Insère un nombre pour qu'il puisse être classés en trois catégorie:")
 print("Positif, Zero, Negatif")
 x=input().lower()
@@ -266,3 +269,5 @@ while boucle:
         print("Vous avez quitter le programme")
         print("Merci pour votre temps")
 
+
+"""
