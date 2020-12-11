@@ -131,7 +131,7 @@ if estOui:
         choix4=input().lower()
 """
 
-
+"""
 # EXEMPLE DE BOUCLE
 
 print("oui ou non")
@@ -231,3 +231,38 @@ while boucle:
         print("Je n'ai pas compris")
         boucle=True
         user=input().lower()
+
+        """
+
+print("Insère un nombre pour qu'il puisse être classés en trois catégorie:")
+print("Positif, Zero, Negatif")
+x=input().lower()
+
+boucle=True
+while boucle:
+    x=float(x)
+    if x==0:
+        print("Zero")
+
+    elif x>=0:
+        print("Positif")
+
+    elif x<=0:
+        print("Negatif")
+    
+    print("")
+    print("Pour insérer un autre nombre, pèse sur e")
+    print("Pour quitter, pezer sur n'importe quelle autre clé")
+    y=input().lower()
+
+    if y=="e":
+        boucle=True
+        print("Vous avez recommencer")
+        print("Insère un autre nombre")
+        x=input().lower()
+
+    elif y !="e":
+        boucle=False
+        print("Vous avez quitter le programme")
+        print("Merci pour votre temps")
+
