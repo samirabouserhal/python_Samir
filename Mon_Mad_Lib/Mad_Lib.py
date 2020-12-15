@@ -58,7 +58,7 @@ def mon_mad_lib():
     phrases.append("Il est temps de {}")
     consignes.append("verbe")
 
-    phrases.append("Vous êtes un/une{}")
+    phrases.append("Vous êtes un/une {}")
     consignes.append("mot")
 
 
