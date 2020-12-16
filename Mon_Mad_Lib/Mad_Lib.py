@@ -16,50 +16,29 @@ def mon_mad_lib():
     """Préparer les phrases à trou""" 
 
     # le trou dans la phrase est indiqué par les {}
-    phrases.append("Vous quitez pour le/la/l' {} à 8:00 ce matin")
+    
+    phrases.append("Vous allez chez le/la/l' {}")
     consignes.append("lieu")
 
-    phrases.append("Vous arivez à {}")
-    consignes.append("un temps")
+    phrases.append("Vous entrez pour prendre un/une {}")
+    consignes.append("objet")
+
+    phrases.append("Vous quittez pour le donner au {}")
+    consignes.append("personne")
+
+    phrases.append("Il vous dit {}")
+    consignes.append("mot")
+
+    phrases.append("Vous êtes maintenant {}")
+    consignes.append("adjectif")
+
+    phrases.append("Vous quittez pour aller chez {} ")
+    consignes.append("lieu")
 
     phrases.append("Vous êtes là pour {}")
     consignes.append("verbe")
 
-    phrases.append("Vous voyez le/la/l' {}")
-    consignes.append("personne")
-
-    phrases.append("Il/Elle est {}")
-    consignes.append("adjectif")
-
-    phrases.append("Vous quittez pour aller chez {}")
-    consignes.append("restaurant")
-
-    phrases.append("Le retaurant est {}")
-    consignes.append("adjectif")
-
-    phrases.append("Votre {} vous appele")
-    consignes.append("personne")
-
-    phrases.append("Il/Elle vous dit de faire le/la {}")
-    consignes.append("tâche à faire")
-
-    phrases.append("Vous allez à {}")
-    consignes.append("magasin")
-
-    phrases.append("Il est {}")
-    consignes.append("temps")
-
-    phrases.append("Vous retournez chez {}")
-    consignes.append("lieu")
-
-    phrases.append("Vous {} de l'eau")
-    consignes.append("verbe du premier groupe")
-
-    phrases.append("Il est temps de {}")
-    consignes.append("verbe")
-
-    phrases.append("Vous êtes un/une {}")
-    consignes.append("mot")
+    
 
 
 
