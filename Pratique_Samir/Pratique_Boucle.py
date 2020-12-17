@@ -1,3 +1,5 @@
+"""
+
 # Ceci est le lieu de pratique de Samir Abou Serhal
 # Contacter moi à abosam30@ecolecatholique.ca
 # Le 8 décembre 2020
@@ -221,3 +223,20 @@ if estOui:
   print("Merci", nom)
   print("")
   print("game over")
+
+
+"""
+
+print("oui ou non")
+repeat=True
+while repeat:
+    choix=input().lower()
+    if choix=='oui':
+        print("Test")
+        repeat=False
+    elif choix=='non':
+        print("Test11111")
+        repeat=False
+    else:
+        print("Pas compris, essaie encore")
+        repeat=True
