@@ -12,16 +12,16 @@ print("")
 print("Pèse 0 pour dire bonjour.")
 print("Pèse 1 pour savoir mon nom.")
 print("Pèse 2 pour dire comment s\'a vas.")
-print("Pèse 3 pour dire un compliment.")
+print("Pèse 3 pour épelé aujourd'hui.")
 print("Pèse 4 pour dire merci.")
 print("Pèse 5 pour dire de rien.")
-print("Pèse 6 pour dire au revoir.")
+print("Pèse 6 pour dire tous les mots.")
 print("Pèse 7 pour répéter tes options.")
 print("Pèse 8 pour quitter le menu interactif.")
 
 boucle=True
 
-mots=['Bonjour', 'Mon nom est Rob', 'Comment s\'a va', 'Vous êtes fin ce matin', 'Merci', 'De rien','Au revoir', 'Répète','Quitter']
+mots=["Bonjour", "Mon nom est Rob", "Comment s'a va", "Aujourd'hui", "Merci", "De rien", "Répète", "Quitter"]
 
 while boucle:
 
@@ -40,7 +40,8 @@ while boucle:
         boucle=True
     
     elif choix=="3":
-        print(mots[3])
+      for lettre in (mots[3]):
+        print(lettre)
         boucle=True
 
     elif choix=="4":
@@ -48,28 +49,27 @@ while boucle:
         boucle=True
    
     elif choix=="5":
-        print(mots[5])
-        boucle=True
-
-    elif choix=="6":
         print(mots[6])
         boucle=True
 
+    elif choix=="6":
+        for i in range(len(mots)):
+          print(mots[i])
+
     elif choix=="7":
         boucle=True
-        print("Voici un menu interactif")
         print("Pèse 0 pour dire bonjour.")
         print("Pèse 1 pour savoir mon nom.")
         print("Pèse 2 pour dire comment s\'a vas.")
-        print("Pèse 3 pour dire un compliment.")
+        print("Pèse 3 pour épelé aujourd'hui.")
         print("Pèse 4 pour dire merci.")
         print("Pèse 5 pour dire de rien.")
-        print("Pèse 6 pour dire au revoir.")
+        print("Pèse 6 pour dire tous les mots.")
         print("Pèse 7 pour répéter tes options.")
         print("Pèse 8 pour quitter le menu interactif.")
 
     elif choix=="8":
-        print(mots[8])
+        print(mots[7])
         boucle=False
         print("Merci pour votre temps, à la prochaine.")
    

@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Mon_Mad_Lib/Mad_Lib.py"
+run = "python Formatif_Liste/Liste.py"

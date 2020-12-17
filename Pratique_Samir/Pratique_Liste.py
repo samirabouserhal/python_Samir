@@ -3,8 +3,7 @@
 # Pour me contacter, envoyer moi un couriel à abosam30@ecolecatholique.ca
 
 
-
-
+""""
 print("")
 print("Bonjour, je suis un menu interactif.")
 print("Voici les options que je vous présente:")
@@ -76,4 +75,22 @@ while boucle:
     else:
         print("Votre entré n'est pas valide, s'il vous plaît essayer encore")
     
+
+"""
+
+
+a=["one", "two", "three"]
+
+for i in range(len(a)):
+  print(a[i])
+
+
+"""
+ma_liste=['a', 'b', 'c']
+
+
+for indice in range(len(ma_liste)):
+    #ma_liste[indice] =ord(ma_liste[indice])
+    print(ma_liste[indice])
+"""
 
