@@ -21,7 +21,7 @@ print("Pèse 8 pour quitter le menu interactif.")
 
 boucle=True
 
-mots=['Bonjour', 'Nom', 'Comment s\'a va', 'Vous êtes fin ce matin', 'Merci', 'De rien','Au revoir', 'Répète','Quitter']
+mots=['Bonjour', 'Mon nom est Rob', 'Comment s\'a va', 'Vous êtes fin ce matin', 'Merci', 'De rien','Au revoir', 'Répète','Quitter']
 
 while boucle:
 
@@ -32,7 +32,7 @@ while boucle:
         boucle=True
    
     elif choix=="1":
-        print("Mon nom est Rob")
+        print(mots[1])
         boucle=True
     
     elif choix=="2":
