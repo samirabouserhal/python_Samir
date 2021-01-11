@@ -4,13 +4,14 @@ WIDTH= 700
 HEIGHT= 500
 
 vert=(50, 220, 100)
-speed = 1
+speed = 2
+height_gain= 1
 
 ballon= Actor("ballon.png")
-ballon.pos=(WIDTH / 2, 700)
+ballon.pos=(450, 750)
 
 joueur= Actor("joueur.png")
-joueur.pos=(WIDTH / 2, 620)
+joueur.pos=(150, 620)
 
 def draw():
   screen.fill(vert)
@@ -19,5 +20,6 @@ def draw():
 
 def update():
   ballon.x = ballon.x + speed
+  ballon.y = ballon.y - height_gain
     
 pgzrun.go()
