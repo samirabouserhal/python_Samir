@@ -8,10 +8,10 @@ speed = 2
 height_gain= 1
 
 ballon= Actor("ballon.png")
-ballon.pos=(450, 750)
+ballon.pos=(175, 450)
 
 joueur= Actor("joueur.png")
-joueur.pos=(150, 620)
+joueur.pos=(170, 620)
 
 def draw():
   screen.fill(vert)
