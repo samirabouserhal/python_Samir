@@ -49,7 +49,7 @@ while boucle:
         boucle=True
    
     elif choix=="5":
-        print(mots[6])
+        print(mots[5])
         boucle=True
 
     elif choix=="6":
