@@ -19,7 +19,15 @@ def draw():
   joueur.draw()
 
 def update():
-  ballon.x = ballon.x + speed
-  ballon.y = ballon.y - height_gain
+  global speed, height_gain
+
+  if (ballon.x < 0 or ballon.x > WIDTH):
+    speed= -speed
+  
+  if (ballon.y < 0 or ballon.y > HEIGHT):
+    height_gain= -height_gain
+
+  ballon.x += speed
+  ballon.y += height_gain
     
 pgzrun.go()
