@@ -7,7 +7,7 @@ WIDTH= 700   # les dimensions des fenetres
 HEIGHT= 500
 
 vert=(50, 220, 100)   # couleur de fond 
-
+rotation= 2 # vitesse de rotation
 text= ("Guide le ballon vers le but.")   
 # text afficher en haut
 
@@ -28,6 +28,9 @@ def draw(): # le fonction draw qui crée la scene
   fillet.draw()
   ballon.draw()
   screen.draw.text(text,(250,10), color="red")
+
+def update():
+  ballon.angle += rotation
 
 def on_mouse_move(pos):  # la fonction qui permet le ballon de suivre la souris de l'utilisateur
     ballon.pos = pos
