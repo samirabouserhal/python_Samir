@@ -27,7 +27,7 @@ def draw(): # le fonction draw qui crée la scene
   joueur.draw()
   fillet.draw()
   ballon.draw()
-  screen.draw.text(text,(250,10), color="white")
+  screen.draw.text(text,(250,10), color="red")
 
 def on_mouse_move(pos):  # la fonction qui permet le ballon de suivre la souris de l'utilisateur
     ballon.pos = pos
