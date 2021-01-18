@@ -4,7 +4,8 @@ import pgzrun
 WIDTH= 700
 HEIGHT= 500
 
-
+# add cropped and right target images
+# add arcade shooting range backgroud
 l_target = Actor("target.jpg")
 l_target.pos=(10,10)
 
