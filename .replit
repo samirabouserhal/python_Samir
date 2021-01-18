@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Base_Pgzero/Base_de_pygame_zero.py"
+run = "python Projet_Pgzero/Projet_Pgzero.py"

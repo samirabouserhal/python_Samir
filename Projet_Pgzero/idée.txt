@@ -1,0 +1,11 @@
+Idée:
+  - Target practise (shooting range)
+  - Moving targets
+  - You miss you lose (if possible add three lives)
+  - Three levels
+  - Progressively harder
+  - When you miss add buzzer noise
+  - Time limit
+  - If possible add target count down (targets left for the level), displays lives, level number, score
+  - Make smaller targets worth more in later rounds
+  - If level cleared bonus points awarded, if not just points earned will suffise
