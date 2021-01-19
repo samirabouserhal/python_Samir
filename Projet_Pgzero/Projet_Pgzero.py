@@ -25,6 +25,8 @@ def draw():
 def update():
   global speed
   l_target.y= l_target.y + speed
-  if l_target.y < 0 or l_target.y > WIDTH:
+  if l_target.y < 0 or l_target.y > HEIGHT:
     speed=-speed
+
+
 pgzrun.go()
