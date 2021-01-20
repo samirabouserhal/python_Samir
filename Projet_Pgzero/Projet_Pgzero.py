@@ -4,7 +4,7 @@ import random
 WIDTH= 700
 HEIGHT= 500
 
-score= 0
+score= "test"
 
 l_target_speed_x=2
 l_target_speed_y=1
@@ -27,8 +27,8 @@ s_target= Actor("s_target.png")
 
 
 def draw():
-  screen.fill("orange")
-  screen.draw.text("Score : ", +str(score), (10,10), fontsize= 30)
+  screen.fill("white")
+  screen.draw.text(score, (10,10), color= black)
   l_target.draw()
   m_target.draw()
   s_target.draw()
