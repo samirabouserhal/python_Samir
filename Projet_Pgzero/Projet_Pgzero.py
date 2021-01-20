@@ -4,7 +4,7 @@ import random
 WIDTH= 700
 HEIGHT= 500
 
-score= "test"
+score= 0
 
 l_target_speed_x=2
 l_target_speed_y=1
@@ -28,10 +28,10 @@ s_target= Actor("s_target.png")
 
 def draw():
   screen.fill("white")
-  screen.draw.text(score, (10,10), color= black)
+  screen.draw.text("Score: " +str(score), (10,10), color= "black")
   l_target.draw()
-  m_target.draw()
-  s_target.draw()
+  #m_target.draw()
+  #s_target.draw()
  
 
 
@@ -42,7 +42,7 @@ def update():
   if l_target.x < 0 or l_target.x > WIDTH:
     l_target_speed_x=-l_target_speed_x
   l_target.y= l_target.y + l_target_speed_y
-  if l_target.y < 200 or l_target.y > HEIGHT:
+  if l_target.y < 100 or l_target.y > HEIGHT:
     l_target_speed_y=-l_target_speed_y
 
   m_target.x = m_target.x + m_target_speed_x
@@ -58,5 +58,19 @@ def update():
   s_target.y = s_target.y + s_target_speed_y
   if s_target.y < 200 or s_target.y > HEIGHT:
     s_target_speed_y= -s_target_speed_y
+
+"""
+def place_l_target():
+  l_target.x= random.randint(0, WIDTH- l_target.width)
+  l_target.y= random.randint(0, HEIGHT-l_target.height)
+
+"""
+def on_mouse_down(pos):
+  global score
+  #l_target.collidepoint(pos):
+  score += 1
+    p«#lace_l_target()
+
+
 
 pgzrun.go()
