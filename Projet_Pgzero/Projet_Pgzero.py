@@ -6,6 +6,8 @@ HEIGHT= 500
 
 score= 0
 
+lives= 3
+
 l_target_speed_x=2
 l_target_speed_y=1
 
@@ -29,9 +31,10 @@ s_target= Actor("s_target.png")
 def draw():
   screen.fill("white")
   screen.draw.text("Score: " +str(score), (10,10), color= "black")
+  screen.draw.text("Vie: " +str(lives), (10,30), color="black")
   l_target.draw()
-  #m_target.draw()
-  #s_target.draw()
+  m_target.draw()
+  s_target.draw()
  
 
 
@@ -41,35 +44,42 @@ def update():
   l_target.x= l_target.x + l_target_speed_x
   if l_target.x < 0 or l_target.x > WIDTH:
     l_target_speed_x=-l_target_speed_x
+  
   l_target.y= l_target.y + l_target_speed_y
-  if l_target.y < 100 or l_target.y > HEIGHT:
+  if l_target.y < 0 or l_target.y > 250:
     l_target_speed_y=-l_target_speed_y
+
 
   m_target.x = m_target.x + m_target_speed_x
   if m_target.x < 0 or m_target.x > WIDTH:
     m_target_speed_x= -m_target_speed_x
+  
   m_target.y = m_target.y + m_target_speed_y
   if m_target.y < 200 or m_target.y > HEIGHT:
     m_target_speed_y= -m_target_speed_y
 
+
   s_target.x = s_target.x + s_target_speed_x
   if s_target.x < 0 or s_target.x > WIDTH:
     s_target_speed_x= -s_target_speed_x
+ 
   s_target.y = s_target.y + s_target_speed_y
   if s_target.y < 200 or s_target.y > HEIGHT:
     s_target_speed_y= -s_target_speed_y
+
 
 """
 def place_l_target():
   l_target.x= random.randint(0, WIDTH- l_target.width)
   l_target.y= random.randint(0, HEIGHT-l_target.height)
-
 """
+
 def on_mouse_down(pos):
-  global score
-  #l_target.collidepoint(pos):
-  score += 1
-    p«#lace_l_target()
+  global score, lives
+  if l_target.collidepoint(pos):
+    score += 1
+    #place_l_target()
+  else: lives -= 1
 
 
 
