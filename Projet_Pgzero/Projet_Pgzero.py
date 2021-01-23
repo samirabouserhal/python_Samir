@@ -1,5 +1,4 @@
 import pgzrun
-import random
 
 WIDTH= 700
 HEIGHT= 500
@@ -25,9 +24,12 @@ m_target = Actor("m_target.png")
 
 s_target= Actor("s_target.png")
 #s_target.pos= (100,100) 
-
-
-
+"""
+def start():
+  screen.fill("blue")
+  screen.draw.text("press space to start", (100,100), color="white")
+  if 
+"""
 def draw():
   screen.fill("white")
   screen.draw.text("Score: " +str(score), (10,10), color= "black")
@@ -46,7 +48,7 @@ def update():
     l_target_speed_x=-l_target_speed_x
   
   l_target.y= l_target.y + l_target_speed_y
-  if l_target.y < 0 or l_target.y > 250:
+  if l_target.y < 0 or l_target.y > 200:
     l_target_speed_y=-l_target_speed_y
 
 
@@ -68,17 +70,19 @@ def update():
     s_target_speed_y= -s_target_speed_y
 
 
-"""
-def place_l_target():
-  l_target.x= random.randint(0, WIDTH- l_target.width)
-  l_target.y= random.randint(0, HEIGHT-l_target.height)
-"""
+
 
 def on_mouse_down(pos):
   global score, lives
   if l_target.collidepoint(pos):
     score += 1
-    #place_l_target()
+
+  if m_target.collidepoint(pos):
+    score += 2
+
+  if s_target.collidepoint(pos):
+    score += 3  
+    
   else: lives -= 1
 
 
