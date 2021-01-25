@@ -9,6 +9,8 @@ lives= 3
 
 time_played= 0
 
+game=True
+
 l_target_speed_x=-2
 l_target_speed_y=1
 
@@ -22,11 +24,8 @@ l_target = Actor("l_target.png",anchor=("center", "top"))
 
 m_target = Actor("m_target.png")
 
-
 s_target= Actor("s_target.png")
  
-
-
 
 
 
@@ -34,17 +33,17 @@ def game():
   screen.fill("white")
   screen.draw.text("Score: " +str(score), (10,10), color= "black")
   screen.draw.text("Vie: " +str(lives), (10,30), color="black")
-  screen.draw.text("Time: " +str(time_played), (600, 10), color="black")
+  screen.draw.text("Temps: " +str(time_played), (600, 10), color="black")
   l_target.draw()
   m_target.draw()
   s_target.draw()
  
+
 def game_over():
   screen.fill("black")
   screen.draw.text("Game over", (300,150))
   screen.draw.text("Score: "+ str(score), (300,200))
-  screen.draw.text("Time: " +str(time_played), (300,250))
-
+  screen.draw.text("Temps: " +str(time_played), (300,250))
 
 
 def draw():
@@ -54,21 +53,22 @@ def draw():
     game_over()
 
 
-
 def on_mouse_down(pos):
   global score, lives
   if l_target.collidepoint(pos):
-      score += 1
+      if lives >=1:
+        score += 1
 
   elif m_target.collidepoint(pos):
-    score += 2
+    if lives>=1:
+      score += 2
 
   elif s_target.collidepoint(pos):
-    score += 3  
+    if lives >=1:
+      score += 3  
       
   else: 
     lives -=1
-
 
 
 def update():
@@ -105,8 +105,9 @@ def update():
 
 
 def update_timer():
-  global time_played
-  time_played += 1
+  global time_played, game
+  if lives>=1:
+    time_played += 1
 
 clock.schedule_interval(update_timer, 1.0)
 
