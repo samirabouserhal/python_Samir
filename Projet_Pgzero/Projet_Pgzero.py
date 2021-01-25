@@ -128,3 +128,6 @@ def update_timer():  # La logique qui permet un timer
 clock.schedule_interval(update_timer, 1.0)
 
 pgzrun.go()
+
+# Améliorement:
+#   Avec le temps j'aimerais soit ajouté plusieur niveau limité par le temps ou ajouté un facteur de placement random pour varié le positionnement des cibles infinis
