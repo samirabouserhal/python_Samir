@@ -1,0 +1,1 @@
+Pygame zero exige des fichiers wav uncompressed et je ne pouvais pas convertir le son voulu dans ce format.

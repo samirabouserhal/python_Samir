@@ -20,12 +20,14 @@ m_target_speed_y=-2
 s_target_speed_x=5
 s_target_speed_y=4
 
-l_target = Actor("l_target.png",anchor=("center", "top"))
+l_target = Actor("l_target.png")
+l_target.pos=(WIDTH/2, HEIGHT/2)
 
 m_target = Actor("m_target.png")
+m_target.pos=(WIDTH/2, HEIGHT/2)
 
 s_target= Actor("s_target.png")
- 
+s_target.pos=(WIDTH/2, HEIGHT/2) 
 
 
 
