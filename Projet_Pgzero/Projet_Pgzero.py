@@ -17,15 +17,17 @@ l_target_speed_y=1
 m_target_speed_x=3
 m_target_speed_y=-2
 
-s_target_speed_x=5
-s_target_speed_y=4
+s_target_speed_x=-3
+s_target_speed_y=2
 
-l_target = Actor("l_target.png",anchor=("center", "top"))
+l_target = Actor("l_target.png")
+l_target.pos=(WIDTH/2, HEIGHT/2)
 
 m_target = Actor("m_target.png")
+m_target.pos=(WIDTH/2, HEIGHT/2)
 
 s_target= Actor("s_target.png")
- 
+s_target.pos=(WIDTH/2, HEIGHT/2) 
 
 
 
@@ -68,7 +70,8 @@ def on_mouse_down(pos):
       score += 3  
       
   else: 
-    lives -=1
+    if lives>=1:
+      lives -=1
 
 
 def update():
@@ -79,7 +82,7 @@ def update():
     l_target_speed_x=-l_target_speed_x
   
   l_target.y= l_target.y + l_target_speed_y
-  if l_target.y < 0 or l_target.y > 200:
+  if l_target.y < 100 or l_target.y > HEIGHT:
     l_target_speed_y=-l_target_speed_y
 
 
@@ -88,7 +91,7 @@ def update():
     m_target_speed_x= -m_target_speed_x
   
   m_target.y = m_target.y + m_target_speed_y
-  if m_target.y < 200 or m_target.y > HEIGHT:
+  if m_target.y < 100 or m_target.y > HEIGHT:
     m_target_speed_y= -m_target_speed_y
 
 
@@ -97,7 +100,7 @@ def update():
     s_target_speed_x= -s_target_speed_x
  
   s_target.y = s_target.y + s_target_speed_y
-  if s_target.y < 200 or s_target.y > HEIGHT:
+  if s_target.y < 100 or s_target.y > HEIGHT:
     s_target_speed_y= -s_target_speed_y
     
   if lives == 0:
