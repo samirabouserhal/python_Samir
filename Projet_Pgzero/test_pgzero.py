@@ -3,29 +3,28 @@ import pgzrun
 WIDTH= 700
 HEIGHT= 500
 
-alive=True
-
 score= 0
 
 lives= 3
 
-l_target_speed_x=2
+time_played= 0
+
+l_target_speed_x=-2
 l_target_speed_y=1
 
 m_target_speed_x=3
-m_target_speed_y=2
+m_target_speed_y=-2
 
 s_target_speed_x=5
 s_target_speed_y=4
 
 l_target = Actor("l_target.png",anchor=("center", "top"))
-#l_target.pos= (200,200)
 
 m_target = Actor("m_target.png")
-#m_target.pos =(WIDTH/2,HEIGHT/2)
+
 
 s_target= Actor("s_target.png")
-#s_target.pos= (100,100) 
+ 
 
 
 
@@ -35,19 +34,23 @@ def game():
   screen.fill("white")
   screen.draw.text("Score: " +str(score), (10,10), color= "black")
   screen.draw.text("Vie: " +str(lives), (10,30), color="black")
+  screen.draw.text("Time: " +str(time_played), (600, 10), color="black")
   l_target.draw()
   m_target.draw()
   s_target.draw()
  
 def game_over():
   screen.fill("black")
+  screen.draw.text("Game over", (300,150))
+  screen.draw.text("Score: "+ str(score), (300,200))
+  screen.draw.text("Time: " +str(time_played), (300,250))
 
 
 
 def draw():
-  if lives >= 0:
+  if lives:
     game()
-  elif lives = 0:
+  else:
     game_over()
 
 
@@ -55,19 +58,21 @@ def draw():
 def on_mouse_down(pos):
   global score, lives
   if l_target.collidepoint(pos):
-    score += 1
+      score += 1
 
-  if m_target.collidepoint(pos):
+  elif m_target.collidepoint(pos):
     score += 2
 
-  if s_target.collidepoint(pos):
+  elif s_target.collidepoint(pos):
     score += 3  
-    
-  else: lives -= 1
+      
+  else: 
+    lives -=1
+
 
 
 def update():
-  global l_target_speed_x, l_target_speed_y, m_target_speed_x, m_target_speed_y, s_target_speed_x, s_target_speed_y
+  global l_target_speed_x, l_target_speed_y, m_target_speed_x, m_target_speed_y, s_target_speed_x, s_target_speed_y, lives
 
   l_target.x= l_target.x + l_target_speed_x
   if l_target.x < 0 or l_target.x > WIDTH:
@@ -94,5 +99,15 @@ def update():
   s_target.y = s_target.y + s_target_speed_y
   if s_target.y < 200 or s_target.y > HEIGHT:
     s_target_speed_y= -s_target_speed_y
+    
+  if lives == 0:
+    game=False
+
+
+def update_timer():
+  global time_played
+  time_played += 1
+
+clock.schedule_interval(update_timer, 1.0)
 
 pgzrun.go()

@@ -7,6 +7,8 @@ score= 0
 
 lives= 3
 
+time_played= 0
+
 l_target_speed_x=2
 l_target_speed_y=1
 
@@ -27,18 +29,49 @@ s_target= Actor("s_target.png")
 
 
 
-def draw():
+
+
+def game():
   screen.fill("white")
   screen.draw.text("Score: " +str(score), (10,10), color= "black")
   screen.draw.text("Vie: " +str(lives), (10,30), color="black")
+  screen.draw.text("Time: " +str(time_played), (600, 10), color="black")
   l_target.draw()
   m_target.draw()
   s_target.draw()
  
+def game_over():
+  screen.fill("black")
+  screen.draw.text("Game over", (300,150))
+  screen.draw.text("Score: "+ str(score), (300,200))
+  screen.draw.text("Time: " +str(time_played), (300,250))
+
+
+
+def draw():
+  if lives:
+    game()
+  else:
+    game_over()
+
+
+
+def on_mouse_down(pos):
+  global score, lives
+  if l_target.collidepoint(pos):
+    score += 1
+
+  if m_target.collidepoint(pos):
+    score += 2
+
+  if s_target.collidepoint(pos):
+    score += 3  
+    
+  else: lives -= 1
 
 
 def update():
-  global l_target_speed_x, l_target_speed_y, m_target_speed_x, m_target_speed_y, s_target_speed_x, s_target_speed_y
+  global l_target_speed_x, l_target_speed_y, m_target_speed_x, m_target_speed_y, s_target_speed_x, s_target_speed_y, lives
 
   l_target.x= l_target.x + l_target_speed_x
   if l_target.x < 0 or l_target.x > WIDTH:
@@ -65,28 +98,15 @@ def update():
   s_target.y = s_target.y + s_target_speed_y
   if s_target.y < 200 or s_target.y > HEIGHT:
     s_target_speed_y= -s_target_speed_y
-
-  if lives == "0":
-    def draw():
-      screen.fill("black")
-
-
-
-
-def on_mouse_down(pos):
-  global score, lives
-  if l_target.collidepoint(pos):
-    score += 1
-
-  if m_target.collidepoint(pos):
-    score += 2
-
-  if s_target.collidepoint(pos):
-    score += 3  
     
-  else: lives -= 1
+  if lives == 0:
+    game=False
 
 
+def update_timer():
+  global time_played
+  time_played += 1
 
+clock.schedule_interval(update_timer, 1.0)
 
 pgzrun.go()
