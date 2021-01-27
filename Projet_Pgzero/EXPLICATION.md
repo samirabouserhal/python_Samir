@@ -6,6 +6,6 @@ Vous aurez trois vie, qui veut dire que vous pourrez manquez seulement trois foi
 
 Vous accumulez des points en frappant les cibles. La grande cible vaut 1 point, la cible moyenne vaut 2 points et finalement la petite cible vaut 3 points.
 
-Vous devrez utiliser votre souris pour clickez sur les cibles.
+Vous devrez utiliser votre souris pour clicker sur les cibles.
 
 Bonne chance!!!
